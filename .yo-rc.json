@@ -1,0 +1,8 @@
+{
+  "generator-mcli": {
+    "promptValues": {
+      "authorName": "whale",
+      "authorEmail": "whaleYou@163.com"
+    }
+  }
+}

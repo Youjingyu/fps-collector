@@ -1,0 +1,22 @@
+{
+  "name": "fe-report",
+  "version": "0.1.0",
+  "description": "collect fps with css3 animation information",
+  "main": "./lib/index.min.js",
+  "private": true,
+  "scripts": {
+    "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
+    "build": "marax lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-marauder": "^1.5.9-rc"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "author": "whale <whaleYou@163.com>",
+  "repository": "https://github.com/Youjingyu/fps-collector"
+}
