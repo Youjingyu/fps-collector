@@ -1,16 +1,19 @@
 {
   "name": "fe-report",
   "version": "0.1.0",
-  "description": "collect fps with css3 animation information",
+  "description": "collect fps with css3 animation information;collect fps when scrolling",
   "main": "./lib/index.min.js",
   "private": true,
   "scripts": {
     "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
     "build": "marax lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "collect-fps": "^2.0.0"
+  },
   "devDependencies": {
-    "webpack-marauder": "^1.5.9-rc"
+    "webpack-marauder": "^1.5.9-rc",
+    "eslint-config-sinamfe": "^1.0.3"
   },
   "engines": {
     "node": ">= 8.0.0",
