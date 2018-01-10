@@ -4,9 +4,9 @@ import Events from './events';
 export default class collectAnimationFps extends Events {
   constructor(options){
     super();
-    this.config = Object.assign({
-      duration: 2000
-    }, options);
+    this.config = {
+      duration: options.duration || 2000
+    }
     this.fps = 0;
     this.animations = [];
     this._endCollection = null;
