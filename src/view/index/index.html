@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+        }
+        .div1
+        {
+            animation:myfirst1 5s;
+            animation-delay: 2s;
+        }
+        .div2{
+            animation:myfirst2 5s;
+            animation-delay: 3s;
+        }
+
+        @keyframes myfirst1
+        {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        @keyframes myfirst2
+        {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+
+    </style>
 </head>
-
 <body>
-</body>
 
+
+<div class="div1"></div>
+<div class="div2"></div>
+</body>
 </html>
