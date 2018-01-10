@@ -1,5 +1,5 @@
 {
-  "name": "fe-report",
+  "name": "fps-collector",
   "version": "0.1.0",
   "description": "collect fps with css3 animation information;collect fps when scrolling",
   "main": "./lib/index.min.js",
