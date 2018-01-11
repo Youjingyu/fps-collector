@@ -1,6 +1,7 @@
 import collectFPS from 'collect-fps';
 import Events from './events';
 
+const doc = document;
 export default class collectAnimationFps extends Events {
   constructor(options){
     super();
@@ -10,12 +11,11 @@ export default class collectAnimationFps extends Events {
     this.fps = 0;
     this.animations = [];
     this._endCollection = null;
-    this._eventFunc = null;
+    this._eventFunc = this._collect.bind(this);
   }
   start(){
     this._endCollection = collectFPS();
-    this._eventFunc = this._collect.bind(this);
-    document.addEventListener('animationstart', this._eventFunc);
+    doc.addEventListener('animationstart', this._eventFunc);
     setTimeout(()=>{
       this.stop((data)=>{
         this.trigger('end', [data]);
@@ -23,7 +23,7 @@ export default class collectAnimationFps extends Events {
     }, this.config.duration)
   }
   stop(cb){
-    document.removeEventListener('animationstart', this._eventFunc);
+    doc.removeEventListener('animationstart', this._eventFunc);
     this.fps = this._endCollection();
     cb && cb({
       fps: this.fps,
