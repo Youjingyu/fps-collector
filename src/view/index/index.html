@@ -38,9 +38,29 @@
     </style>
 </head>
 <body>
+<span id="test" style="position: fixed; color: red; font-size: 30px"></span>
+<div id="content">
 
+</div>
 
-<div class="div1"></div>
-<div class="div2"></div>
+<!--<div class="div1"></div>-->
+<!--<div class="div2"></div>-->
+<script>
+    var html = '';
+    for(var i = 0; i < 20; i++){
+      html += `<section class="m_f_a">
+    <figure class="m_f_div i_bg">
+        <img class="img_width finpic" src="http://k.sinaimg.cn/n/default/transform/20171025/GMp4-fymzzpw2371199.jpg/w200h134l50t120f.jpg" alt="习近平谈新时代选人用人的“标尺”">
+    </figure>
+    <aside class="m_f_con">
+        <h2 class="m_f_con_t cm_tit">习近平谈新时代选人用人的“标尺”</h2>
+        <blockquote class="cm_f_ic cm_f_ic_l">
+            <em class="m_f_con_n m_f_con_n_r"><span class="m_f_con_ic_l m_f_con_ic icon_com"></span><span class="m_f_con_com_n">${i}</span></em>
+        </blockquote>
+    </aside>
+</section>`
+    }
+    document.getElementById('content').innerHTML = html;
+</script>
 </body>
 </html>
