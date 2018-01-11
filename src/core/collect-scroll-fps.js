@@ -36,12 +36,11 @@ export default class collectScrollFps extends Events {
       scrollTop = curScrollTop;
 
       this.fps = endCollection();
-      // 滚动超过两屏才触发
-      if(Math.abs(distance) >= screenHeight * 2){
+      // 滚动超过两屏，且超过阈值才触发
+      if(Math.abs(distance) >= screenHeight * 2 && Math.abs(speed) >= this.config.threshold){
         this.trigger('end', [{
           fps: this.fps,
-          speed: speed,
-          quickScroll: Math.abs(speed) >= this.config.threshold
+          speed: speed
         }])
       }
     });
