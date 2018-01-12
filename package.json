@@ -1,7 +1,7 @@
 {
   "name": "fps-collector",
   "version": "0.2.1",
-  "description": "collect fps with css3 animation information;collect fps when scrolling",
+  "description": "collect fps containing css3 animation information;collect fps when scrolling",
   "main": "./lib/index.min.js",
   "scripts": {
     "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",

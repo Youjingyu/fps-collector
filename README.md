@@ -1,2 +1,2 @@
 # fps-collector
-collect fps with css3 animation information
+collect fps containing css3 animation information;collect fps when scrolling
