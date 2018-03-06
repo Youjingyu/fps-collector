@@ -1,18 +1,18 @@
 {
   "name": "fps-collector",
   "version": "0.2.1",
-  "description": "collect fps containing css3 animation information;collect fps when scrolling",
-  "main": "./lib/index.min.js",
+  "description":
+    "collect fps containing css3 animation information;collect fps when scrolling",
+  "main": "./lib/index.cjs.js",
   "scripts": {
-    "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
+    "dev": "marax dev",
     "build": "marax lib"
   },
   "dependencies": {
     "collect-fps": "^2.0.0"
   },
   "devDependencies": {
-    "webpack-marauder": "^1.5.9-rc",
-    "eslint-config-sinamfe": "^1.0.3"
+    "webpack-marauder": "^1.7.3"
   },
   "engines": {
     "node": ">= 8.0.0",
